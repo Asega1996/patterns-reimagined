@@ -1,4 +1,6 @@
-export class Logger {
+import type { Logger as LoggerType } from "../types.js";
+
+export class Logger implements LoggerType {
     private static instance: Logger | null = null;
 
     private constructor() { }
