@@ -5,7 +5,7 @@ Traditionally used in object-oriented systems to avoid constructors with many pa
 
 In modern functional and frontend architectures, builders often emerge naturally from function composition, fluent interfaces, or configuration objects that are built incrementally through method chaining or object spreading.
 
-In the examples provided, the Builder is demonstrated using a **query builder** system capable of constructing database queries step by step (select fields, from table, where conditions, ordering, pagination, etc.).
+In the examples provided, the Builder is demonstrated using an **HTTP request builder** system capable of constructing HTTP requests step by step (method, URL, headers, body, query parameters, timeout, etc.).
 
 For more information about the Builder pattern, you can check the  
 [Refactoring Guru article](https://refactoring.guru/design-patterns/builder)
