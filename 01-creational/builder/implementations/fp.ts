@@ -1,4 +1,4 @@
-import type { HttpRequest } from "../types.js";
+import { HttpRequest } from "../types";
 
 type HttpRequestBuilder = {
     method: (method: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH') => HttpRequestBuilder;

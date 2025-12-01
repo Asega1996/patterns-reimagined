@@ -1,4 +1,4 @@
-import type { HttpRequest } from "../types.js";
+import { HttpRequest } from "../types";
 
 export class HttpRequestBuilder {
     private request: HttpRequest = {
