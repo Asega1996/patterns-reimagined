@@ -1,6 +1,4 @@
 import { ApiUser } from "./types";
-import { UserFormatterAdapter } from "./implementations/oop";
-import { createUserFormatter } from "./implementations/fp";
 
 const mockApiUserRes: ApiUser = {
     first_name: "Alejandro",
@@ -11,11 +9,13 @@ const mockApiUserRes: ApiUser = {
 
 
 // Using OOP Adapter
+import { UserFormatterAdapter } from "./implementations/oop";
 const oopFormatter = new UserFormatterAdapter();
 const domainUserFromOop = oopFormatter.format(mockApiUserRes);
 console.log("OOP adapter:", domainUserFromOop);
 
 // Using FP Adapter
+import { createUserFormatter } from "./implementations/fp";
 const fpFormatter = createUserFormatter();
 const domainUserFromFp = fpFormatter.format(mockApiUserRes);
 console.log("FP adapter:", domainUserFromFp);
