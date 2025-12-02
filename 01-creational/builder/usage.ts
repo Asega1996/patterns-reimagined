@@ -1,5 +1,5 @@
 // Using OOP HTTP Request Builder
-import { HttpRequestBuilder } from "./implementations/oop.js";
+import { HttpRequestBuilder } from "./implementations/oop";
 
 const oopRequest = new HttpRequestBuilder()
     .method('POST')
@@ -13,7 +13,7 @@ const oopRequest = new HttpRequestBuilder()
 console.log("OOP HTTP Request:", oopRequest);
 
 // Using FP HTTP Request Builder
-import { httpRequestBuilder } from "./implementations/fp.js";
+import { httpRequestBuilder } from "./implementations/fp";
 
 const fpRequest = httpRequestBuilder()
     .method('GET')
