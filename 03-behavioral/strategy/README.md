@@ -22,6 +22,9 @@ The Strategy pattern is widely used in modern web development:
 - **Caching strategies**: LRU, FIFO, LFU cache eviction policies
 - **Rendering strategies**: Server-side, client-side, or hybrid rendering
 
+One of the biggest strengths of JavaScript and TypeScript is the usage of callbacks.
+This means you can pass a function as a parameter, return it, or store it in a variable
+
 ### Example used in this folder
 
 The example demonstrates a **Date Formatting System** that supports three main conventions:
